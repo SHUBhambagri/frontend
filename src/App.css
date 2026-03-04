@@ -1,0 +1,29 @@
+.App {
+  min-height: 100vh;
+  background: white;
+}
+
+.btn-primary {
+  @apply rounded-none border-2 border-black bg-black text-white hover:bg-transparent hover:text-black transition-all duration-300 font-bold uppercase tracking-wider px-8 py-4;
+}
+
+.btn-outline {
+  @apply rounded-none border-2 border-black bg-transparent text-black hover:bg-black hover:text-white transition-all duration-300 font-bold uppercase tracking-wider px-8 py-4;
+}
+
+.product-card {
+  @apply relative border border-zinc-200 bg-white overflow-hidden hover:border-black transition-colors duration-300;
+}
+
+.input-field {
+  @apply rounded-none border-2 border-zinc-200 focus:border-black focus:ring-0 bg-transparent px-4 py-3 font-medium placeholder:text-zinc-400;
+}
+
+.marquee-content {
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
